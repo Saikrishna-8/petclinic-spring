@@ -32,7 +32,7 @@ jobs:
         
     - name: Build and Push Docker Image
       run: |
-        docker build - java-docker .
+        docker build -t java-docker .
         docker tag java-docker saikrishna8/java-docker:latest
         docker push saikrishna8/java-docker:latest
     env:
